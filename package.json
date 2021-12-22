@@ -1,0 +1,24 @@
+{
+  "name": "react-ts-template",
+  "version": "1.0.0",
+  "description": "react typescript template project",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/harryBedfordSL/react-typescript-template.git"
+  },
+  "keywords": [
+    "react",
+    "typescript",
+    "template"
+  ],
+  "author": "Harry Bedford",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/harryBedfordSL/react-typescript-template/issues"
+  },
+  "homepage": "https://github.com/harryBedfordSL/react-typescript-template#readme"
+}
