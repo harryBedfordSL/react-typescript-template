@@ -26,7 +26,16 @@ const config: Configuration = {
       },
       {
         test: /\.css$/i,
-        use: ["style-loader", "css-loader"],
+        exclude: /node_modules/,
+        use: ["style-loader", {
+          loader: "css-loader",
+          options: {
+            importLoaders: 1,
+            sourceMap: true,
+            modules: true,
+            camelCase: true
+          }
+        }],
       }
     ],
   },

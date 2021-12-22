@@ -1,6 +1,6 @@
 import React from 'react';
-import './app.css';
+import styles from './app.module.css';
 
 export const App = () => {
-  return <div className='app-heading'> Hello from React World</div>
+  return <div className={styles.appHeading}> Hello from React World</div>
 }
