@@ -28,11 +28,10 @@ const config: Configuration = {
         test: /\.css$/i,
         exclude: /node_modules/,
         use: ["style-loader", {
-          loader: "css-loader",
+          loader: "typings-for-css-modules-loader",
           options: {
-            importLoaders: 1,
-            sourceMap: true,
             modules: true,
+            namedExport: true,
             camelCase: true
           }
         }],
