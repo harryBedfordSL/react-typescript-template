@@ -2,5 +2,8 @@
 
 Template with minimal config for a react, typescript, and css modueles app.
 
-Want to add:
-- add new font
+#### Get going
+
+- fork this repo
+- npm i at root
+- npm run start
