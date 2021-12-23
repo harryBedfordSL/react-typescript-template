@@ -1,12 +1,8 @@
 import path from "path";
-import { Configuration, HotModuleReplacementPlugin } from "webpack";
 import HtmlWebpackPlugin from "html-webpack-plugin";
+import { Configuration } from "webpack";
 
-const config: Configuration = {
-  mode: "development",
-  output: {
-    publicPath: "/",
-  },
+export const commonConfig: Configuration = {
   entry: "./src/index.tsx",
   module: {
     rules: [
@@ -34,9 +30,9 @@ const config: Configuration = {
             namedExport: true,
             camelCase: true
           }
-        }],
+        }]
       }
-    ],
+    ]
   },
   resolve: {
     extensions: [".tsx", ".ts", ".js"],
@@ -44,17 +40,12 @@ const config: Configuration = {
   plugins: [
     new HtmlWebpackPlugin({
       template: "public/index.html",
+      title: 'Production',
     }),
-    new HotModuleReplacementPlugin(),
   ],
-  devtool: "inline-source-map",
-  devServer: {
-    static: path.join(__dirname, "build"),
-    historyApiFallback: true,
-    port: 4000,
-    open: true,
-    hot: true
+  output: {
+    filename: '[name].bundle.js',
+    path: path.resolve(__dirname, 'dist'),
+    clean: true,
   },
 };
-
-export default config;
