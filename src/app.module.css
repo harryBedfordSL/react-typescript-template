@@ -1,6 +1,15 @@
-.app-heading {
-  align-items: center;
+.container {
   display: flex;
-  justify-content: center;
   height: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.app-heading {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+  padding: 50px;
+  box-shadow: 0.25rem 0.25rem black, -0.25rem -0.25rem #ccc;
+  border-radius: 5px;
+  text-shadow: 1px 1px rgba(225, 225, 225, 0.5);
 }
