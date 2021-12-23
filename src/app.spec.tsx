@@ -7,5 +7,5 @@ describe('app', () => {
     const app = shallow(<App />);
 
     expect(app.length).toBe(1);
-  })
-})
+  });
+});
